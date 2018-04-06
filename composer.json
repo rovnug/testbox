@@ -1,0 +1,37 @@
+{
+    "name" : "anax/ipv6box",
+    "description": "Webbsite for ipv6box",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gunvor Nilsson",
+            "email": "gunvor@ipv6home.se"
+        },
+        {
+            "name": "Anders Kjellström",
+            "email": "anders@ipv6home.se"
+        }
+    ],
+    "require": {
+        "anax/request": "^1.0",
+        "anax/router": "^1.0",
+        "anax/response": "^1.0",
+        "anax/view": "^1.0",
+        "anax/url": "^1.0",
+        "anax/session": "^1.0",
+        "anax/textfilter": "^1.0",
+        "anax/configure": "^1.0",
+        "mos/cimage": "^0.7.20",
+        "symfony/yaml": "^3.3",
+        "anax/di": "^1.0",
+        "anax/page": "^1.0",
+        "anax/common": "^1.0",
+        "anax/database": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Guni\\": "src/",
+            "Anax\\": "src/"
+        }
+    }
+}

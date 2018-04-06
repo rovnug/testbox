@@ -1,0 +1,8 @@
+/.bin
+/build
+/vendor
+/config/database.php
+/scripts/old
+/webfonts
+/theme
+/.scaffold

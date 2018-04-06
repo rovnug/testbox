@@ -1,0 +1,13 @@
+#
+#
+RewriteEngine on
+
+# Detta fungerar i raspen om symlink görs:
+# sudo ln -s /home/pi/ipv6box/htdocs /var/www/html
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule (.*) - [NC,L]
+#RewriteRule ^image/(.*)$ cimage/img.php?src=$1 [QSA,NC,L]
+
+RewriteRule (.*) index.php/$1 [NC,L]
